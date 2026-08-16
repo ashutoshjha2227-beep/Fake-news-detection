@@ -173,14 +173,7 @@ if check_button:
 
         with st.expander("See ML model's independent opinion"):
             st.write(f"Style-based prediction: **{ml_label}** ({ml_confidence:.1f}% confidence)")
-            st.caption(
-                "This is based purely on writing patterns learned from ~40,000 historical "
-                "labeled articles — it does not check if this is currently in the news."
-            )
+            st.caption()
 
 st.divider()
-st.caption(
-    "How it decides: live NewsAPI results are checked first (primary signal). "
-    "If nothing relevant is found online, the app falls back to the trained "
-    "TF-IDF + Logistic Regression model (secondary signal)."
-)
+st.caption()
